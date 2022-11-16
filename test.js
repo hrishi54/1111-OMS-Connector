@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html>
-<body>
+//JavaScript program to swap two variables
 
-<h2>This is to test GithubConnector</h2>
-<p>pss.</p>
+//take input from the users
+let a = prompt('Enter the first variable: ');
+let b = prompt('Enter the second variable: ');
 
-<p id="demo"></p>
+//create a temporary variable
+let temp;
 
-<script>
-document.getElementById("demo").innerHTML = 5 + 6;
-</script>
+//swap variables
+temp = a;
+a = b;
+b = temp;
 
-</body>
-</html> 
+console.log(`The value of a after swapping: ${a}`);
+console.log(`The value of b after swapping: ${b}`);
